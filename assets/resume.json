@@ -1,22 +1,26 @@
 {
-  "name": "Adam Fakes",
-  "title": "Software Engineer & Scientist",
-  "heading": "Adam Fakes - Software Engineer",
-  "subheading": "Software Engineer, Scientist, GeoSpatial Analyst, and DevOps Engineer",
-  "avatar": "https://avatars0.githubusercontent.com/u/1169102?v=4",
-  "presence": {
-    "email": "adam@datavi.co",
-    "phone": "0401-302243",
-    "physical": "Melbourne, Victoria, Australia",
-    "linkedin": "https://www.linkedin.com/in/adamfakes",
-    "github": "https://github.com/afakes/",
-    "portfolio": "https://www.linkedin.com/in/adamfakes"
+  "page": {
+    "title": "Adam Fakes - Software Engineer"
   },
-  "motto": "MOVE THE PROCESS or MOVE THE DATA",
-  "introduction" : "With over 20 years of multifaceted experience spanning Software Engineering, Scientific Research, Geo-spatial Analysis, DevOps, and Cloud Engineering. I have contributed to the success of projects in government entities, technology firms, SMEs, universities, scientific institutions, and gaming companies. Coupled with a Bachelor's degree in Computer Science and a proven track record of accomplishments in the industry. I am skilled at system architecture, data structure, and inter-dependencies identification. My expertise lies in designing, building, integrating, and automating complex systems with a unique blend of precision, innovation and creativity.",
+  "header": {
+    "name": "Adam Fakes",
+    "heading": "Adam Fakes - Software Engineer",
+    "subheading": "Software Engineer, Scientist, GeoSpatial Analyst",
+    "avatar": "https://avatars0.githubusercontent.com/u/1169102?v=4",
+    "motto": "MOVE THE PROCESS or MOVE THE DATA",
+    "introduction" : "With over 20 years of multifaceted experience spanning Software Engineering, Scientific Research, Geo-spatial Analysis, DevOps, and Cloud Engineering. I have contributed to the success of projects in government entities, technology firms, SMEs, universities, scientific institutions, and gaming companies. Coupled with a Bachelor's degree in Computer Science and a proven track record of accomplishments in the industry. I am skilled at system architecture, data structure, and inter-dependencies identification. My expertise lies in designing, building, integrating, and automating complex systems with a unique blend of precision, innovation and creativity."
+  },
+  "contacts": [
+    {"name":"Email", "value":"adam@datavi.co"},
+    {"name":"Phone", "value":"0401-302243"},
+    {"name":"Physical", "value":"Melbourne, Victoria, Australia"},
+    {"name":"LinkedIn", "value":"https://www.linkedin.com/in/adamfakes"},
+    {"name":"Github", "value":"https://github.com/afakes/"},
+    {"name":"Portfolio", "value":"https://www.linkedin.com/in/adamfakes"}
+  ],
   "education": [
-    { "date":"2012", "name": "B.Sc. comp-sci, James Cook University" },
-    { "date":"1994", "name": "Diploma of Computing, Newcastle University" }
+    { "year":"2012", "name": "James Cook University, Bachelor of Science (Computer science, Environmental science)" },
+    { "year":"1994", "name": "Newcastle University, Diploma of Computing" }
   ],
   "academic": {
     "title": "CO-AUTHORED JOURNAL ARTICLES",
@@ -96,7 +100,7 @@
       "text": ""
     }
   ],
-  "employment": [
+  "experience": [
     {
       "date": {"from": "Dec 2022", "to": "present"},
       "title": "Senior Software Engineer",
@@ -237,8 +241,6 @@
         }
       ]
     },
-
-
     {
       "date": {"from": "Apr 2009", "to": "Apr 2010"},
       "title": "Science Researcher",
@@ -249,7 +251,7 @@
         "Conducted analysis on geographic and satellite remote sensing datasets to generate geographic datasets, cartographic imagery, and figures for publication in journal articles",
         "Delivered a public lecture on XML titled 'eXciting Markup Language'."
       ],
-      "link": "https://grace.jpl.nasa.gov/mission/grace/",      
+      "link": "https://grace.jpl.nasa.gov/mission/grace/"
     },
     {
       "date": {"from": "Sep 2006", "to": "Apr 2009"},

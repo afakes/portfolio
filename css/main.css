@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,800");
-@import url("fontawesome-all.min.css");
+
 
 
 html, body, div, span, applet, object,
@@ -25,5 +24,316 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
+	padding: 1em;
 	line-height: 1;
 }
+
+
+section {
+	padding: 1em;
+  }
+
+/* each section should have a alternating color background */
+section:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+
+section:nth-child(even) {
+  background-color: #e4e4e4;
+}
+
+header {
+  background-color: #DDDDDD;
+  color: #000;
+  padding: 1em;
+  text-align: left;
+}
+
+.heading  {
+  font-size: 2em;
+  margin-bottom: 0.2em;
+  /* set font to be solid */
+  font-weight: 800;
+  width: 100%;
+  border-bottom: 1px solid black;
+
+}
+
+.subheading  {
+	  font-size: 1.1em;
+  margin-bottom: 0.8em;
+  font-weight: 500;
+}
+
+.contact {  
+  margin-bottom: 0.5em;
+  font-weight: 400;
+}
+
+.contact ul li{
+  font-size: 0.9em;
+  list-style-type: none;
+  margin-bottom: 0.1em;
+}
+
+/* contact ul li item to large square */
+.contact ul li::before {
+  content: "#";
+  margin-right: 0.5em;
+}
+
+/* contact ul li first span */
+.contact ul li span:first-child {
+  display: inline-block;
+  font-weight: 800;
+  margin: 0.1em;
+  width: 7em;
+  max-width: 7em;
+  text-transform: uppercase;
+}
+.contact ul li span:nth-child(2) {
+	font-weight: normal;
+}
+ 
+.contact ul li span:nth-child(2)::before {
+	content: ":";
+	margin-right: 0.2em;
+}
+ 
+
+
+/* .motto  */
+.motto {
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  text-transform: lowercase;
+  font-style: italic;
+}
+  
+/* insert content before .motto  */
+.motto::before {
+  content: "motto: ";
+  font-size: 0.9em;
+  margin-right: 0.2em;
+  font-weight: 800;
+}
+
+h3 {
+	font-size: 1.5em;
+margin-bottom: 0.5em;
+font-weight: 800;
+
+}
+
+.about h3 {
+	font-size: 1.5em;
+
+}
+
+/* .about  .introduction  */
+.about .introduction {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+
+  /* max width 3/4 the page */
+  width: 40em;
+  
+  /* line spacing 1.2 */
+  line-height: 1.2;
+  
+}
+
+.education h3 {
+	font-size: 1.5em;
+}
+
+
+.education ul li {
+	font-size: 0.9em;
+	list-style-type: none;
+	margin-bottom: 0.3em;
+  }
+  
+  
+  /* education ul li first span */
+  .education ul li span:first-child {
+	display: inline-block;
+	font-weight: 800;
+	margin: 0.1em;
+	width: 3em;
+	max-width: 7em;
+	text-transform: uppercase;
+  }
+  .education ul li span:nth-child(2) {
+	  font-weight: normal;
+  }
+   
+  .education ul li span:nth-child(2)::before {
+	  content: ":";
+	  margin-right: 0.4em;
+  }
+  
+
+
+
+.skills h3 {
+	font-size: 1.5em;
+}
+
+
+.skills ul li {
+	font-size: 0.9em;
+	list-style-type: none;
+	margin-bottom: 0.3em;
+  }
+  
+  
+/* .skills ul li  alternate background color */
+.skills ul li:nth-child(odd) {
+	  background-color: #f4f4f4;
+	  }
+
+/* .skills ul li  alternate background color */
+.skills ul li:nth-child(even) {
+	background-color: #e4e4e4;
+}
+
+
+
+  /* skills ul li first span */
+  /* score */
+  .skills ul li span:first-child {
+	display: inline-block;
+	font-weight: normal;
+	margin: 0.1em;
+	width: 5em;
+	text-transform: uppercase;
+	letter-spacing: 1pt;
+  }
+  
+  .skills ul li span:nth-child(1)::after {
+	content: " / 5.0";
+	font-weight: 100;
+  }
+
+  /* years */
+  .skills ul li span:nth-child(2) {
+	display: inline-block;
+	font-weight: normal;
+	margin: 0.1em;
+	margin-right: 1.5em;
+	width: 3em;
+	text-align: right;
+	font-family: monospace;
+  }
+
+  .skills ul li span:nth-child(2)::after {
+	content: " yrs";
+	font-weight: 100;
+	font-family: sans-serif;
+	/* make font subscript */
+	vertical-align: sub;
+	font-size: 60%;
+  }
+
+
+  /* name */
+  .skills ul li span:nth-child(3) {
+	display: inline-block;
+	font-weight: normal;
+	margin: 0.1em;
+  }
+
+
+.experience h3 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+
+.experience ul li {
+	font-size: 0.9em;
+	list-style-type: none;
+	margin-bottom: 2em;
+  }
+
+  .experience ul li h1 {
+	font-size: 20pt;
+	margin-bottom: 0.3em;
+	font-weight: bold;
+	border-bottom: 1px solid #AAAAAA ;
+	padding-bottom: 0.2em;
+  }
+
+  .experience ul li h2 {
+	display: inline-block;
+	margin-bottom: 0.3em;
+	width: 100%;
+  }
+
+  .experience ul li h2 span:nth-child(1) {
+	margin-right: 0.3em;
+	font-size: 16pt;
+	font-weight: bold;
+  }
+
+  .experience ul li h2 span:nth-child(2) {
+	font-size: 11pt;
+	font-weight: normal;
+	font-style: italic;
+	margin-left: 0.2em;
+  }
+
+
+  .experience ul li h3 {
+	display: inline-block;
+	font-size: 9pt;
+	margin-top: 0.2em;
+	margin-bottom: 0.3em;
+	font-weight: normal;
+	text-transform: uppercase;
+  }
+
+  .experience ul li h3 span:nth-child(1) {
+	margin-right: 0.1em;
+  }
+
+  .experience ul li h3 span:nth-child(2) {
+	margin-left: 0.1em;
+  }
+
+  .experience ul li h3 span:nth-child(2)::before {
+	content: " to ";
+	text-transform: lowercase;
+  }
+
+
+
+
+/* .experience ul li  alternate background color */
+.experience > ul > li:nth-child(odd) {
+	  background-color: #f4f4f4;
+	  }
+
+/* .skills ul li  alternate background color */
+.experience > ul > li:nth-child(even) {
+	background-color: #e4e4e4;
+}
+
+.experience ul li ul {
+	padding: 1em;
+	margin-left: 2em;
+  }
+
+.experience ul li ul li{
+
+	list-style-type: circle;
+	margin-bottom: 0.4em;
+	line-height: 1.2;
+	width: 40em;
+  }
+
+
+
+
