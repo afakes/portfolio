@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Teko:wght@300&display=swap')
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -50,7 +50,8 @@ header {
 }
 
 .heading  {
-  font-size: 2em;
+  font-size: 2.5em;
+  font-family: 'Open Sans', sans-serif;
   margin-bottom: 0.2em;
   /* set font to be solid */
   font-weight: 800;
@@ -60,9 +61,10 @@ header {
 }
 
 .subheading  {
-	  font-size: 1.1em;
+	  font-size: 1.8em;
   margin-bottom: 0.8em;
   font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .contact {  
@@ -104,16 +106,18 @@ header {
 
 /* .motto  */
 .motto {
-  font-size: 0.9em;
+  font-size: 1.3em;
   margin-bottom: 0.5em;
   font-weight: 500;
   text-transform: lowercase;
   font-style: italic;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
   
 /* insert content before .motto  */
 .motto::before {
-  content: "motto: ";
+  content: "";
   font-size: 0.9em;
   margin-right: 0.2em;
   font-weight: 800;
@@ -131,17 +135,17 @@ font-weight: 800;
 
 }
 
-/* .about  .introduction  */
-.about .introduction {
-  font-size: 1em;
+/* .introduction  */
+.introduction {
+  font-size: 1.4em;
   margin-bottom: 0.5em;
   font-weight: 400;
-
-  /* max width 3/4 the page */
-  width: 40em;
-  
   /* line spacing 1.2 */
   line-height: 1.2;
+  /* justify test full across */
+  text-align: justify;
+
+  font-family: 'Open Sans', sans-serif;
   
 }
 
@@ -335,5 +339,30 @@ font-weight: 800;
   }
 
 
+  .profile_picture {
+	  width: 300px;
+	  height: 300px;
+	  margin-bottom: 1em;
+  }
 
+/* make header a flex */
+header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+/* header 1st child flex */
+header > div:nth-child(1) {
+	padding-top: 2em;
+	align-items: flex-start;
+}
+
+
+/* header 2nd child */
+header > div:nth-child(2) {
+	margin-left: 1em;
+	align-items: flex-start;
+	width: 800px;
+}
 
