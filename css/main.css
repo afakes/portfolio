@@ -44,7 +44,7 @@ main {
   }
 
 /* section not  */
-section:not(.contact):not(.education) {
+section:not(.contact):not(.education):not(.single_experience) {
 	padding-left: 2em;
 	padding-right: 2em;
 	padding-top: 1em;
@@ -71,7 +71,9 @@ header {
 }
 
 .subheading  {
-	  font-size: 1.8em;
+	  font-size: 1.1em;
+	   font-style: italic;
+	   letter-spacing: 0.05em;
   margin-bottom: 0.8em;
   font-weight: 500;
   font-family: 'Open Sans', sans-serif;
@@ -85,7 +87,7 @@ header {
   margin-bottom: 1em;  
   align-items: center;
   border-bottom: None;
-  border-right: 1px solid black;
+  margin: auto;
 }
 
 .picture img {
@@ -116,21 +118,17 @@ header {
   }
 
 .contact {  
+
   
-  font-weight: 400;
-    
 }
 
-.contact ul li{
+.contact ul li {
+	font-size: 1.3em;
   list-style-type: none;
-
+  margin-bottom: 0.2em;
 }
 
-/* contact ul li item to large square */
-.contact ul li::before {
-  content: "*";
-  margin-right: 0.5em;
-}
+
 
 /* contact ul li first span */
 .contact ul li span:first-child {
@@ -152,8 +150,6 @@ header {
  
 
 
-
-
 h3 {
 	font-size: 1.5em;
 margin-bottom: 0.5em;
@@ -166,21 +162,22 @@ font-weight: 800;
 
 }
 
-/* .introduction  */
+
 .introduction {
-  font-size: 1.4em;
-  margin-bottom: 0.5em;
-  font-weight: 400;
-  line-height: 1.2;
-  text-align: justify;
-  font-family: 'Open Sans', sans-serif;
   grid-column-start: span 1;
 }
-
 @media only screen and (min-width: 700px) {
 	.introduction {
 		grid-column-start: span 2;
 	}
+}
+
+.introduction {
+	  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 .education ul {
@@ -214,26 +211,9 @@ font-weight: 800;
 
 
 
+
 .skills h3 {
 	font-size: 1.5em;
-}
-
-
-.skills ul li {
-	font-size: 0.9em;
-	list-style-type: none;
-	margin-bottom: 0.3em;
-  }
-  
-  
-/* .skills ul li  alternate background color */
-.skills ul li:nth-child(odd) {
-	  background-color: #f4f4f4;
-	  }
-
-/* .skills ul li  alternate background color */
-.skills ul li:nth-child(even) {
-	background-color: #e4e4e4;
 }
 
 
@@ -304,12 +284,12 @@ font-weight: 800;
 
   .single_experience h2 {
 	display: inline-block;
-	margin-bottom: 0.3em;
+	
 	width: 100%;
   }
 
   .single_experience h2 span:nth-child(1) {
-	margin-right: 0.3em;
+	
 	font-size: 16pt;
 	font-weight: bold;
   }
@@ -318,25 +298,29 @@ font-weight: 800;
 	font-size: 11pt;
 	font-weight: normal;
 	font-style: italic;
-	margin-left: 0.2em;
+	
+  }
+
+  .single_experience ul li {
+	margin-bottom: 0.5em;
+	line-height: 1.2em;
+
   }
 
 
   .single_experience h3 {
 	display: inline-block;
 	font-size: 9pt;
-	margin-top: 0.2em;
-	margin-bottom: 0.3em;
 	font-weight: normal;
 	text-transform: uppercase;
   }
 
   .single_experience h3 span:nth-child(1) {
-	margin-right: 0.1em;
+	
   }
 
   .single_experience h3 span:nth-child(2) {
-	margin-left: 0.1em;
+	
   }
 
   .single_experience h3 span:nth-child(2)::before {
