@@ -36,10 +36,16 @@ class PageManager {
     updateEducation() {
         let html = "";
         for (let education of this.data.education) {
-            html += `<li><div><b>${education.year}</b> ${education.award}</div>  <div>${education.name}</div> </li>`;
+            html += `
+            <div class="single_education">
+                <div class="first">${education.award}</div> 
+                <div class="second">${education.subject}</div> 
+                <div class="third">${education.name} (${education.year})</div>
+            </div>
+            `;
         }
         // body > main > section.education > ul
-        this.updateContent('.education > ul', html);
+        this.updateContent('.education', html);
     }
 
     updatePresence() {

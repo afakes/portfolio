@@ -187,33 +187,26 @@ font-weight: 800;
 
 }
 
-.education ul {
-	margin-top: 1em;
+.single_education {
+	margin-top: 2em;
 }
 
-.education ul li {
-	list-style-type: none;
-	margin-bottom: 0.3em;	
+.single_education .first {
+	font-size: 1.4em;
+	font-weight: 800;
+	margin-bottom: 0.1em;
+	text-wrap: balance;
+	letter-spacing: 0.15em;
 }
 
-/* .education ul li first child  */
-.education > ul > li:nth-child(1) > div:nth-child(1) > b {
-	display: inline-block;
-	font-weight: bold;
-}
-.education > ul > li:nth-child(2) > div:nth-child(1) > b {
-	display: inline-block;
-	font-weight: bold;
+.single_education .second {
+	font-size: 1.2em;	
+	margin-bottom: 0.1em;
 }
 
-.education > ul > li:nth-child(1) > div:nth-child(2) {
-	/* indent 2em */
-	margin-left: 2.2em;
-}
-
-.education > ul > li:nth-child(2) > div:nth-child(2) {
-	/* indent 2em */
-	margin-left: 2.2em;
+.single_education .third {
+	font-size: 1.0em;
+	font-style: italic;
 }
 
 
