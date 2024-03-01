@@ -39,13 +39,14 @@ body {
 main {
 	display: grid;
 	grid-template-columns: 1fr;
-	width: 70em;
-	margin: auto;
+
 }
 
 @media only screen and (min-width: 700px) {
 	main {
 		grid-template-columns: 1fr 1fr;
+		width: 70em;
+		margin: auto;
 	}
   }
 
