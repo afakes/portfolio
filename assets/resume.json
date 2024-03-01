@@ -19,8 +19,8 @@
     {"name":"Portfolio", "value":"https://www.linkedin.com/in/adamfakes"}
   ],
   "education": [
-    { "year":"2012", "name": "James Cook University, Bachelor of Science (Computer science, Environmental science)" },
-    { "year":"1994", "name": "Newcastle University, Diploma of Computing" }
+    { "year":"2012", "name": "James Cook University", "award": "Bachelor of Science (Computer science, Environmental science)" },
+    { "year":"1994", "name": "Newcastle University", "award": "Diploma of Computing" }
   ],
   "academic": {
     "title": "CO-AUTHORED JOURNAL ARTICLES",

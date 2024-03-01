@@ -1,5 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Teko:wght@300&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Teko:wght@300&display=swap');
+
+:root {
+	/* --desktop-width: 700px; */
+  }
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -17,30 +22,35 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;}
-
-body {
-	padding: 1em;
-	line-height: 1;
+footer, header, hgroup, menu, nav, section { 
+	display: block;
 }
 
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 70em;
+	margin: auto;
+}
 
-section {
-	padding: 1em;
+@media only screen and (min-width: 700px) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
   }
 
-/* each section should have a alternating color background */
-section:nth-child(odd) {
-  background-color: #f4f4f4;
+/* section not  */
+section:not(.contact):not(.education) {
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
-section:nth-child(even) {
-  background-color: #e4e4e4;
-}
 
 header {
   background-color: #DDDDDD;
@@ -67,20 +77,58 @@ header {
   font-family: 'Open Sans', sans-serif;
 }
 
+
+.picture {
+  width: 300px;
+  height: 300px;
+
+  margin-bottom: 1em;  
+  align-items: center;
+  border-bottom: None;
+  border-right: 1px solid black;
+}
+
+.picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #0000001A;
+  box-shadow: 0px 0px 10px 0px #0000001A;
+}
+
+/* .motto  */
+.motto {
+	font-size: 1.3em;
+	margin-bottom: 0.5em;
+	font-weight: 500;
+	text-transform: lowercase;
+	font-style: italic;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+  }
+	
+  /* insert content before .motto  */
+  .motto::before {
+	content: "";
+	font-size: 0.9em;
+	margin-right: 0.2em;
+	font-weight: 800;
+  }
+
 .contact {  
-  margin-bottom: 0.5em;
+  
   font-weight: 400;
+    
 }
 
 .contact ul li{
-  font-size: 0.9em;
   list-style-type: none;
-  margin-bottom: 0.1em;
+
 }
 
 /* contact ul li item to large square */
 .contact ul li::before {
-  content: "#";
+  content: "*";
   margin-right: 0.5em;
 }
 
@@ -104,24 +152,7 @@ header {
  
 
 
-/* .motto  */
-.motto {
-  font-size: 1.3em;
-  margin-bottom: 0.5em;
-  font-weight: 500;
-  text-transform: lowercase;
-  font-style: italic;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-}
-  
-/* insert content before .motto  */
-.motto::before {
-  content: "";
-  font-size: 0.9em;
-  margin-right: 0.2em;
-  font-weight: 800;
-}
+
 
 h3 {
 	font-size: 1.5em;
@@ -140,45 +171,46 @@ font-weight: 800;
   font-size: 1.4em;
   margin-bottom: 0.5em;
   font-weight: 400;
-  /* line spacing 1.2 */
   line-height: 1.2;
-  /* justify test full across */
   text-align: justify;
-
   font-family: 'Open Sans', sans-serif;
-  
+  grid-column-start: span 1;
 }
 
-.education h3 {
-	font-size: 1.5em;
+@media only screen and (min-width: 700px) {
+	.introduction {
+		grid-column-start: span 2;
+	}
 }
 
+.education ul {
+	margin-top: 1em;
+}
 
 .education ul li {
-	font-size: 0.9em;
 	list-style-type: none;
-	margin-bottom: 0.3em;
-  }
-  
-  
-  /* education ul li first span */
-  .education ul li span:first-child {
+	margin-bottom: 0.3em;	
+}
+
+/* .education ul li first child  */
+.education > ul > li:nth-child(1) > div:nth-child(1) > b {
 	display: inline-block;
-	font-weight: 800;
-	margin: 0.1em;
-	width: 3em;
-	max-width: 7em;
-	text-transform: uppercase;
-  }
-  .education ul li span:nth-child(2) {
-	  font-weight: normal;
-  }
-   
-  .education ul li span:nth-child(2)::before {
-	  content: ":";
-	  margin-right: 0.4em;
-  }
-  
+	font-weight: bold;
+}
+.education > ul > li:nth-child(2) > div:nth-child(1) > b {
+	display: inline-block;
+	font-weight: bold;
+}
+
+.education > ul > li:nth-child(1) > div:nth-child(2) {
+	/* indent 2em */
+	margin-left: 2.2em;
+}
+
+.education > ul > li:nth-child(2) > div:nth-child(2) {
+	/* indent 2em */
+	margin-left: 2.2em;
+}
 
 
 
@@ -256,13 +288,13 @@ font-weight: 800;
 	margin-bottom: 1em;
 }
 
-.experience ul li {
+.single_experience {
 	font-size: 0.9em;
 	list-style-type: none;
 	margin-bottom: 2em;
   }
 
-  .experience ul li h1 {
+  .single_experience h1 {
 	font-size: 20pt;
 	margin-bottom: 0.3em;
 	font-weight: bold;
@@ -270,19 +302,19 @@ font-weight: 800;
 	padding-bottom: 0.2em;
   }
 
-  .experience ul li h2 {
+  .single_experience h2 {
 	display: inline-block;
 	margin-bottom: 0.3em;
 	width: 100%;
   }
 
-  .experience ul li h2 span:nth-child(1) {
+  .single_experience h2 span:nth-child(1) {
 	margin-right: 0.3em;
 	font-size: 16pt;
 	font-weight: bold;
   }
 
-  .experience ul li h2 span:nth-child(2) {
+  .single_experience h2 span:nth-child(2) {
 	font-size: 11pt;
 	font-weight: normal;
 	font-style: italic;
@@ -290,7 +322,7 @@ font-weight: 800;
   }
 
 
-  .experience ul li h3 {
+  .single_experience h3 {
 	display: inline-block;
 	font-size: 9pt;
 	margin-top: 0.2em;
@@ -299,51 +331,20 @@ font-weight: 800;
 	text-transform: uppercase;
   }
 
-  .experience ul li h3 span:nth-child(1) {
+  .single_experience h3 span:nth-child(1) {
 	margin-right: 0.1em;
   }
 
-  .experience ul li h3 span:nth-child(2) {
+  .single_experience h3 span:nth-child(2) {
 	margin-left: 0.1em;
   }
 
-  .experience ul li h3 span:nth-child(2)::before {
+  .single_experience h3 span:nth-child(2)::before {
 	content: " to ";
 	text-transform: lowercase;
   }
 
 
-
-
-/* .experience ul li  alternate background color */
-.experience > ul > li:nth-child(odd) {
-	  background-color: #f4f4f4;
-	  }
-
-/* .skills ul li  alternate background color */
-.experience > ul > li:nth-child(even) {
-	background-color: #e4e4e4;
-}
-
-.experience ul li ul {
-	padding: 1em;
-	margin-left: 2em;
-  }
-
-.experience ul li ul li{
-
-	list-style-type: circle;
-	margin-bottom: 0.4em;
-	line-height: 1.2;
-	width: 40em;
-  }
-
-
-  .profile_picture {
-	  width: 300px;
-	  height: 300px;
-	  margin-bottom: 1em;
-  }
 
 /* make header a flex */
 header {

@@ -36,10 +36,10 @@ class PageManager {
     updateEducation() {
         let html = "";
         for (let education of this.data.education) {
-            html += `<li><span>${education.year}</span><span>${education.name}</span></li>`;
+            html += `<li><div><b>${education.year}</b> ${education.award}</div>  <div>${education.name}</div> </li>`;
         }
         // body > main > section.education > ul
-        this.updateContent('body > main > section.education > ul', html);
+        this.updateContent('.education > ul', html);
     }
 
     updatePresence() {
@@ -64,40 +64,46 @@ class PageManager {
 
     updateExperience() {
         
-        let html = "";
-
-        let toc = [];
-
-        let points_html = "";
         for (let experience of this.data.experience) {
-
-            points_html = "";
-            for (let point of experience.points) {
-                points_html += `<li>${point}</li>`;
-            }
-    
-            //  create tag from title and organisation, removing all spaces
-            let tag = experience.title + experience.organisation;
-            tag = tag.replace(/\s/g, '');
-
-            toc.push({"tag": tag, "title": `${experience.title} (${experience.organisation})`});
-
-            html += `
-            <li>
-                <h1><a id="#${tag}"></a>${experience.title}</h1>
-                <h2><span>${experience.organisation}</span><span>${experience.location}</span></h2> 
-                <h3><span>${experience.date.from}</span><span>${experience.date.to}</span></h3> 
-                <ul>
-                    ${points_html}
-                </ul>
-            </li>`;
+            this.insert_single_experience(experience);
         }
 
         // body > main > section.education > ul
-        this.updateContent('body > main > section.experience > ul', html);
+        // this.updateContent('body > main > section.experience > ul', html);
     }
 
+    insert_single_experience(experience) {
+    
+        let html = "";
+        let points_html = "";
+        for (let point of experience.points) {
+            points_html += `<li>${point}</li>`;
+        }
 
+        html += `
+        <section class="single_experience">
+            <h1>${experience.title}</h1>
+            <h2><span>${experience.organisation}</span><span>${experience.location}</span></h2> 
+            <h3><span>${experience.date.from}</span><span>${experience.date.to}</span></h3> 
+            <ul>
+                ${points_html}
+            </ul>
+        </section>`;
+
+        // body > main > section.education > ul
+        //  this.updateContent('body > main > section.experience > ul', html);
+
+        // insert after the end of main
+        // let main = document.querySelector('body > main');
+        // main.insertAdjacentHTML('beforeend', html);
+        
+        //  experience
+        // insert after  section experience
+        let section_experience = document.querySelector('body > main > section.experience');
+        section_experience.insertAdjacentHTML('beforeend', html);
+
+
+    }
 
     updateContent(selector, content) {
 
