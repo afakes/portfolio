@@ -31,6 +31,26 @@ class PageManager {
         this.updateSkills();
         this.updateExperience();
 
+        
+
+    }
+
+    makeLinks() {   
+        // find all elements where text contains https:// or http://
+
+        let elements = document.querySelectorAll('.contact *');
+        for (let element of elements) {
+            if (element.textContent.includes('http://') || element.textContent.includes('https://')) {
+                let text = element.textContent;
+
+                // log text
+                console.log(text);
+
+                let link = `<a href="${text}">${text}</a>`;
+                // element.innerHTML = link;
+            }
+        }
+        
     }
 
     updateEducation() {
@@ -51,7 +71,14 @@ class PageManager {
     updatePresence() {
         let html = "";
         for (let contact of this.data.contacts) {
-            html += `<li><span>${contact.name}</span><span>${contact.value}</span></li>`;
+
+            let value = contact.value;
+            // if value is a link
+            if (value.includes('http://') || value.includes('https://')) {
+                value = `<a target="_${contact.name}" href="${value}">${value}</a>`;
+            }
+
+            html += `<li><span>${contact.name}</span><span>${value}</span></li>`;
         }
 
         this.updateContent('.contact > ul', html);

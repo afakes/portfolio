@@ -16,7 +16,8 @@
     {"name":"Physical", "value":"Melbourne, Victoria, Australia"},
     {"name":"LinkedIn", "value":"https://www.linkedin.com/in/adamfakes"},
     {"name":"Github", "value":"https://github.com/afakes/"},
-    {"name":"Portfolio", "value":"https://www.linkedin.com/in/adamfakes"}
+    {"name":"Portfolio", "value":"https://adamfakes.com"},
+    {"name":"Meet", "value":"https://meet.google.com/omv-aizq-vrj"}
   ],
   "education": [
     { "year":"2012", "name": "James Cook University", "award": "Bachelor of Science", "subject":"Computer science, Environmental science" },
