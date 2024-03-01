@@ -83,22 +83,14 @@ class PageManager {
         html += `
         <section class="single_experience">
             <h1>${experience.title}</h1>
-            <h2><span>${experience.organisation}</span><span>${experience.location}</span></h2> 
-            <h3><span>${experience.date.from}</span><span>${experience.date.to}</span></h3> 
+            <h2>${experience.organisation}</h2>
+            <h3>${experience.location}</h3> 
+            <h4>${experience.date.from}</span> => <span>${experience.date.to}</span></h4> 
             <ul>
                 ${points_html}
             </ul>
         </section>`;
 
-        // body > main > section.education > ul
-        //  this.updateContent('body > main > section.experience > ul', html);
-
-        // insert after the end of main
-        // let main = document.querySelector('body > main');
-        // main.insertAdjacentHTML('beforeend', html);
-        
-        //  experience
-        // insert after  section experience
         let section_experience = document.querySelector('body > main > section.experience');
         section_experience.insertAdjacentHTML('beforeend', html);
 
