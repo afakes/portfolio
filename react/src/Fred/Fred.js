@@ -2,13 +2,13 @@ import React from 'react';
 
 const doFred = (src) => {
     // log src
-    console.log(src);
+    console.log(`doFred ... ${src}`);
   };
 
 function Fred() {
     
     return (
-        <div className="App">
+        <div >
          this is fred
         <button onClick={() => doFred(this)}>FRED</button>
 
