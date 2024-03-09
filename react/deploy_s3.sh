@@ -22,6 +22,5 @@ rm -rf $DIR/build/*
 aws s3 sync $DIR/deploy/s3 s3://adamfakes.com/react --delete --acl public-read
 
 # invalidate cloudfront
-aws cloudfront create-invalidation --distribution-id E3KQYE7K1YTIPL --paths "/react/*"
-
-
+aws cloudfront create-invalidation --distribution-id E3KQYE7K1YTIPL --paths "/*"
+aws cloudfront create-invalidation --distribution-id E20CMRUG3YJNW8 --paths "/*"

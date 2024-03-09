@@ -5,8 +5,9 @@ const doFred = (src) => {
     console.log(`doFred ... ${src}`);
   };
 
+
 function Fred() {
-    
+
     return (
         <div >
          this is fred
@@ -14,7 +15,6 @@ function Fred() {
 
        </div>
     );
-
 }
 
 export default Fred;

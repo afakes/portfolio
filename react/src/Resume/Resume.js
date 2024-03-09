@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Education from './Education/Education';
 
 class Resume extends Component {
   
@@ -13,7 +14,14 @@ class Resume extends Component {
 
   async fetchData(url) {
     const response = await fetch(url);
-    const data = await response.json();
+    
+    let data = null;
+    try { 
+      data = await response.json();
+    } catch (error) {
+      throw new Error('Error fetching data');
+    }
+   
     return data;
   }
 
@@ -30,31 +38,15 @@ class Resume extends Component {
     let result = [];
     let value = null;
     for (let [i, contact] of data.contacts.entries()) {
-
       value = contact.value;
-      // if value starts with http make it a link
       if (value.startsWith('http')) {
         value = <a target="_new" href={value}>{value}</a>;
       }  
-
       result.push(<li key={i}><span>{contact.name}</span><span>{value}</span></li>);
     }
     return (<ul>{result}</ul>);
   }
 
-  education(data) {
-    let result = [];
-    for (let [i, education] of data.education.entries()) {
-      result.push(
-          <div key={i} className="single_education">
-              <div className="first">{education.award}</div> 
-              <div className="second">{education.subject}</div> 
-              <div className="third">{education.name} ({education.year})</div>
-          </div>
-      );
-    }
-    return (result);
-  }
 
   introduction(data) {
     return (
@@ -76,7 +68,6 @@ class Resume extends Component {
     return (result);
   }
 
-
   ul(items) {
     let result = [];
     for (let [i, item] of items.entries()) {
@@ -86,7 +77,6 @@ class Resume extends Component {
     }
     return (<ul>{result}</ul>);
   }
-
 
   experience(data) {
     let result = [];
@@ -105,12 +95,14 @@ class Resume extends Component {
     return (result);
   }
 
+
   render() {
     const { data, loading, error } = this.state;
 
     if (loading) { return <div>Loading...</div>; }
-    if (error) { return <div>Error: {error.message}</div>; }
+    if (error) { return <div>ABC Error: {error.message}</div>; }
 
+    
     return (
       <main>
         <section className="picture">
@@ -123,8 +115,10 @@ class Resume extends Component {
           <h2 className="subheading">{data.header.subheading}</h2>
           <section className="contact">
               {this.contact(data)}
-          </section>            
-          <section className="education">{this.education(data)}</section>
+          </section>
+          <section className="education">
+            <Education education={data.education} />
+          </section>
         </section>
 
         <section className="introduction">{this.introduction(data)}</section>
