@@ -153,11 +153,7 @@ class ResumeArticle extends HTMLElement {
 
     // method to render the content, hewre we are using createElement to create the content
     render() {
-            
-        console.log("resume-article");
-        console.log(this.data);
-        
-
+                
         if (this.heading)    { this.appendChild(Object.assign(document.createElement("h2"), { innerText: this.heading })); }
         if (this.subheading) { this.appendChild(Object.assign(document.createElement("h3"), { innerText: this.subheading })); }
         if (this.summary)    { this.appendChild(Object.assign(document.createElement("h4"), { innerText: this.summary })); }        
@@ -186,9 +182,10 @@ class ResumeSection extends HTMLElement {
     constructor() {
         super();
         this.data = null;
+        
     }
 
-    // methodf to call after being inserted into DOM
+    // method to call after being inserted into DOM
     connectedCallback() {
         this.render();
     }
@@ -231,10 +228,6 @@ class ResumeSection extends HTMLElement {
 
 
     render() {
-
-        // log section
-        console.log(`resume_section ${this.sectionType}`);
-        console.log(this.data);
 
         if (this.title)      { this.appendChild(Object.assign(document.createElement("h1"), { innerText: this.title })); }
         if (this.heading)    { this.appendChild(Object.assign(document.createElement("h2"), { innerText: this.heading })); }
