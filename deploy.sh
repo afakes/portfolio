@@ -27,7 +27,7 @@ cd $DIR
 
 # recreate the text version
 cd text
-./create_text.py
+./create.py
 
 # copy the text version to portfolio root as readme.txt
 cp resume.txt ../readme.txt
