@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "http://beast/development/local/portfolio/react/deploy/local/static/css/main.72649d50.css",
+    "main.js": "http://beast/development/local/portfolio/react/deploy/local/static/js/main.1767c93d.js",
+    "index.html": "http://beast/development/local/portfolio/react/deploy/local/index.html",
+    "main.72649d50.css.map": "http://beast/development/local/portfolio/react/deploy/local/static/css/main.72649d50.css.map",
+    "main.1767c93d.js.map": "http://beast/development/local/portfolio/react/deploy/local/static/js/main.1767c93d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72649d50.css",
+    "static/js/main.1767c93d.js"
+  ]
+}

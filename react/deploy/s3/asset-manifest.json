@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "https://adamfakes.com/react/static/css/main.72649d50.css",
+    "main.js": "https://adamfakes.com/react/static/js/main.1767c93d.js",
+    "index.html": "https://adamfakes.com/react/index.html",
+    "main.72649d50.css.map": "https://adamfakes.com/react/static/css/main.72649d50.css.map",
+    "main.1767c93d.js.map": "https://adamfakes.com/react/static/js/main.1767c93d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72649d50.css",
+    "static/js/main.1767c93d.js"
+  ]
+}

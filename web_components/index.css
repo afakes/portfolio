@@ -1,0 +1,430 @@
+
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+resume-article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* body  */
+body {
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  font-size: 16pt;
+}
+
+
+
+/* container main */
+#container {
+  max-width: 60em;
+  min-width: 40em;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* h1 */
+h1 {
+  font-size: 200%;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #333;
+  margin: 0;
+  margin-top: 1em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #333333;
+
+}
+
+/* h2 */
+h2 {
+  font-size: 150%;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #333;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+/* h3 */
+h3 {
+  font-size: 100%;
+  font-weight: 700;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* h4 */
+h4 {
+  font-size: 80%;
+  font-weight: 700;
+  color: #333;
+  margin: 20px 0;
+  /*  uppercase */
+  text-transform: uppercase;
+}
+
+
+#page {
+  margin: 0;
+}
+
+#page h2 {
+  font-size: 300%;
+  /* margin: 0; */
+  margin-bottom: 0.1em;
+  padding: 0;
+  letter-spacing: 0.05em;
+}
+
+#page h4 {
+  font-size: 110%;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.05em;
+}
+
+
+
+#contact {
+  margin: 0; 
+}
+
+#contact resume-article {
+  margin: 0; 
+}
+
+#contact resume-article ul {
+  margin: 0; 
+}
+
+#contact resume-article ul li {
+  margin: 0; 
+  margin-left: 2em; 
+  list-style-type: none;
+  padding-top: 0.8em; 
+  
+}
+
+/* first span in #contact resume-article ul li */
+#contact resume-article resume-key-values ul li span:first-child {
+  font-weight: 700;
+  color: #333;
+  margin-right: 0.5em;
+  padding-bottom: 0.2em;
+  display: inline-block;
+  width:10em;
+  border-bottom: 1px solid #888888;
+  text-transform: uppercase;
+}
+
+/* second span in #contact resume-article ul li */
+#contact resume-article resume-key-values ul li span:last-child {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #888888;
+  display: inline-block;
+  width:22em;
+  padding-bottom: 0.2em;
+}
+
+#contact resume-article resume-key-values ul li span:last-child a {
+  font-weight: normal;
+}
+
+
+#summary {
+  margin: 0; 
+}
+
+#summary resume-article {
+  margin: 0; 
+  display: block;
+}
+
+#summary resume-article h4 {
+  font-size: 110%;
+  margin: 0;
+  margin-top: 0.4em;
+  margin-bottom: 1em;
+  padding: 0;
+  letter-spacing: 0.1em;
+}
+
+
+#summary resume-article resume-points ul {
+  margin: 0; 
+  margin-left: 2em; 
+}
+
+#summary resume-article resume-points ul li {
+  margin: 0; 
+  /* no bullet */
+  list-style-type: none;
+  line-height: 1.4em;
+  padding-bottom: 0.8em;
+  max-width: 40em;
+  display: inline-block;
+  
+}
+
+
+#education {
+  margin: 0; 
+  margin-top: 2em;
+}
+
+#education h1 {
+  margin: 0; 
+  margin-bottom: 0.5em; 
+}
+
+#education resume-article {
+  margin-bottom: 2em;
+  margin-left: 2em;
+  display: block;
+}
+
+#education resume-article h2 {
+  margin: 0;
+  margin-bottom: 0.3em;
+}
+
+#education resume-article h3 {
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+  
+}
+
+#education resume-article h4 {
+  margin: 0; 
+  margin-bottom: 0.5em;
+  font-weight: normal;
+  
+}
+
+
+#skills {
+  margin: 0; 
+  margin-top: 2em;
+}
+
+#skills h1 {
+  margin: 0; 
+  margin-bottom: 0.5em; 
+  
+}
+
+
+#skills resume-article {
+  margin-bottom: 2em;
+  margin-left: 2em;
+  display: block;
+}
+
+#skills resume-article h2 {
+  margin: 0;
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
+}
+
+#skills resume-article h3 {
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+  
+}
+
+#skills resume-article h4 {
+  margin: 0; 
+  margin-bottom: 0.5em;
+  font-weight: normal;
+  
+}
+
+#skills resume-article resume-key-values ul {
+  margin: 0; 
+}
+
+#skills resume-article resume-key-values ul li {
+  margin: 0; 
+  list-style-type: none;
+  padding-top: 0.6em; 
+  
+}
+
+/* first span in #contact resume-article ul li */
+#skills resume-article resume-key-values ul li span:first-child {
+  font-weight: normal;
+  color: #333;
+  margin-right: 0.5em;
+  padding-bottom: 0.2em;
+  display: inline-block;
+  width:4em;
+  border-bottom: 1px solid #888888;
+  text-transform: uppercase;
+  /* right align */
+  text-align: right;
+}
+
+#skills resume-article resume-key-values ul li span:first-child::after {
+  content: " years";
+  text-transform: lowercase;
+  font-weight: normal;
+}
+
+/* second span in #contact resume-article ul li */
+#skills resume-article resume-key-values ul li span:last-child {
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.05em;
+  
+  display: inline-block;
+  width:50em;
+  padding-bottom: 0.2em;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+
+
+
+#experience {
+  margin: 0; 
+  margin-top: 2em;
+}
+
+#experience h1 {
+  margin: 0; 
+  margin-bottom: 0.5em; 
+}
+
+#experience resume-article {
+  margin-bottom: 2em;
+  margin-left: 2em;
+  display: block;
+}
+
+#experience resume-article h2 {
+  margin: 0;
+  margin-bottom: 0.3em;
+  
+}
+
+#experience resume-article h2::before {
+  /* square box */
+  content: "\25A0";
+  font-size: 1.4em;
+  margin-right: 0.2em;
+  vertical-align: text-bottom;
+}
+
+
+#experience resume-article h3 {
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  
+}
+
+#experience resume-article h4 {
+  margin: 0; 
+  margin-bottom: 0.5em;
+  font-weight: normal;
+  
+}
+
+#experience resume-article ul {
+  margin: 0; 
+}
+
+#experience resume-article ul li {
+  margin: 0; 
+  list-style-type: square;
+  padding-top: 0.6em; 
+  margin-left: 2em;
+  line-height: 1.1em;
+  font-family: "Roboto Condensed", sans-serif;
+  width: 40em;
+}
+
+
+#academic {
+  margin: 0; 
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#academic h1 {
+  margin: 0; 
+  margin-bottom: 0.5em; 
+}
+
+#academic resume-article {
+  margin-bottom: 0.6em;
+  margin-left: 1em;
+  display: block;
+}
+
+#academic resume-article h2 {
+  margin: 0;
+  margin-bottom: 0.3em;
+  
+}
+
+#academic resume-article h2::before {
+  /* square box */
+  content: "\25A0";
+  font-size: 1.4em;
+  margin-right: 0.2em;
+  vertical-align: text-bottom;
+}
+
+
+#academic resume-article h3 {
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  
+}
+
+#academic resume-article h4 {
+  margin: 0; 
+  margin-bottom: 0.5em;
+  font-weight: normal;
+  
+}
+
+#academic resume-article ul {
+  margin: 0; 
+}
+
+#academic resume-article ul li {
+  margin: 0; 
+  list-style-type: square;
+  padding-top: 0.6em; 
+  margin-left: 0em;
+  line-height: 1.1em;
+  font-family: "Roboto Condensed", sans-serif;
+  width: 40em;
+}
