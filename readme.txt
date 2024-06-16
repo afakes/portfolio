@@ -9,11 +9,19 @@ JSON source - https://github.com/afakes/resume/blob/master/resume.json
 
 S3 Hosted
 -------------------------------
-Vanilla JavaScript - https://adamfakes.com
-React, JavaScript  - https://adamfakes.com/react
-Web Components     - https://adamfakes.com/web_components
+Vanilla JavaScript - https://adamfakes.com/index.html
+React, JavaScript  - https://adamfakes.com/react/index.html
+Web Components     - https://adamfakes.com/web_components/index.html
 
+
+GitHUB Pages hosting
+-------------------------------
+
+
+GitHUB raw file hosting
+-------------------------------
 Formatted text using local Python - https://raw.githubusercontent.com/afakes/portfolio/main/text/resume.txt
+JSON source - https://github.com/afakes/resume/blob/master/resume.json
 
 
 Text version
