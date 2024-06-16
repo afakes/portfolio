@@ -9,5 +9,13 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo "Copying  to s3 root"
 aws s3 sync  . s3://adamfakes.com/web_components --acl public-read --include "index.*"
 
-aws cloudfront create-invalidation --distribution-id E3KQYE7K1YTIPL --paths "/*"
-aws cloudfront create-invalidation --distribution-id E20CMRUG3YJNW8 --paths "/*"
+# if environmental variable is set, then invalidate cloudfront cache
+if [ -z "$INVALIDATE" ]
+then
+    echo "No invalidation requested"
+else
+    echo "Invalidating cloudfront cache"
+    aws cloudfront create-invalidation --distribution-id E3KQYE7K1YTIPL --paths "/*"
+    aws cloudfront create-invalidation --distribution-id E20CMRUG3YJNW8 --paths "/*"
+fi
+

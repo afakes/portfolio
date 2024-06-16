@@ -66,3 +66,7 @@ cd react
 cd $DIR
 
 
+echo "Invalidating cloudfront cache"
+aws cloudfront create-invalidation --distribution-id E3KQYE7K1YTIPL --paths "/*"
+aws cloudfront create-invalidation --distribution-id E20CMRUG3YJNW8 --paths "/*"
+

@@ -21,6 +21,12 @@ rm -rf $DIR/build/*
 # deploy to s3
 aws s3 sync $DIR/deploy/s3 s3://adamfakes.com/react --delete --acl public-read
 
-# invalidate cloudfront
-aws cloudfront create-invalidation --distribution-id E3KQYE7K1YTIPL --paths "/*"
-aws cloudfront create-invalidation --distribution-id E20CMRUG3YJNW8 --paths "/*"
+# if environmental variable is set, then invalidate cloudfront cache
+if [ -z "$INVALIDATE" ]
+then
+    echo "No invalidation requested"
+else
+    echo "Invalidating cloudfront cache"
+    aws cloudfront create-invalidation --distribution-id E3KQYE7K1YTIPL --paths "/*"
+    aws cloudfront create-invalidation --distribution-id E20CMRUG3YJNW8 --paths "/*"
+fi
