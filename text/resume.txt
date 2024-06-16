@@ -113,13 +113,15 @@ KEY SKILLS
       18 years NodeJS, JavaScript, ECMAScript Development
        9 years Linux Web Application development (Apache, MySQL, Python, PHP)
        6 years Apache configuration and Management
+       4 years Javascript development *Web Components)
+       2 years React development
   
   
   INFRASTRUCTURE
   ----------------------------------------------------------------------------------------------------
-  CLOUD ENGINEERING | API DEVELOPMENT | SECURITY | AUTHENTICATION | AUTHORISATION
+  CLOUD ENGINEERING | API DEVELOPMENT | SECURITY | AUTHENTICATION | AUTHORIZATION
       11 years Amazon Web Services (AWS)
-      13 years Linux - RHEL, Debain, Ubuntu, systems administration (daemons & services, file-systems)
+      13 years Linux - RHEL, Debian, Ubuntu, systems administration (daemons & services, file-systems)
        8 years AWS EC2, infrastructure as code (cloud-formation), load balancing, auditing
        9 years Unix infrastructure management
        7 years Linux application development (CLI, ncurses, GTK)
@@ -136,8 +138,12 @@ EXPERIENCE
   Regrow.ag (remote)
   - DEC 2022 to MAY 2024 
   
-   * re-designed, and developed the data-exchange interface, between our main product and the
-     contract/document management system Docusign
+   * Led the refactor and re-architecture efforts for our core SaaS product, focusing on
+     enhancing code quality and minimising defects. Introduced SonarCube's Complexity metrics
+     to improve code maintainability.
+  
+   * Redesigned, and developed the data-exchange interface, between the main product and the
+     contract/document management system Docusign.
   
    * Created Geo-spatial datasets tailored to support producers across the EU, USA, and
      Australia in managing their crop and farming practices efficiently using open source QGIS
@@ -147,12 +153,8 @@ EXPERIENCE
      modules for storing Climate Data sourced from primary producers and third-party data
      providers.
   
-   * Led the refactor and re-architecture efforts for our core SaaS product, focusing on
-     enhancing code quality and minimising defects. Introduced SonarCube's Complexity metrics
-     to improve code maintainability.
-  
    * Developed and implemented Geo-spatial algorithms and integrations with machine learning
-     models in using Python, Fast API, Pydantic.
+     models in using Python, Fast API, and Pydantic.
   
    * Authored internal Software Engineering guides to facilitate knowledge sharing and
      standardisation within the team.
@@ -165,31 +167,33 @@ EXPERIENCE
   RUBIX (Melbourne, Australia)
   - NOV 2021 to DEC 2022 
   
-   * Budget Management: Successfully managed budgets exceeding $1million, including meticulous
+   * Management and Leadership: Oversaw day-to-day operations and work package assignments for
+     a dynamically sized team, ranging from 4 to 15 members. Managed people and project funding
+     allocations, providing executive-level reporting. Notably, established and led the
+     Software as a Service team and its product portfolio from inception to commercial
+     delivery.
+  
+   * Budget Management: Successfully managed budgets exceeding $1 million, including meticulous
      work forecasting to ensure efficient resource allocation (people, infrastructure and
      expertise).
-  
-   * Data Store: Established a 'Data Marketplace' using Shopify for the curated retail sale of
-     Machine Learning ready datasets. Developed all Python-based APIs. Implemented a system
-     where data is initially stored as CSV and dynamically converted to various requested
-     formats such as CSV, JSON, Parquet and API payloads, and stored in S3. This system made
-     extensive use of Pandas, GeoPandas, Numpy and Scikit-learn for statistical analysis
-     (Normal distribution calculations).
   
    * Business Proposals: Authored comprehensive proposals for Data System builds, encompassing
      client requirement alignment, business and use case development, and end-to-end technology
      and resource cost analysis.
   
-   * Management and Leadership: Oversaw day-to-day operations and work package assignments for
-     a dynamically sized team, ranging from 4 to 15 members. Managed personnel costs, project
-     funding allocations, and provided executive-level reporting. Notably, established and led
-     the SaaS team and its product portfolio from inception.
-  
-   * Solution Architecture: Designed, developed, and managed  the delivery of ReefBuilder, an
+   * Solution Architecture: Designed, developed, and managed the delivery of ReefBuilder, an
      Environmental data capture and reporting platform. Developed the framework, for a Python
-     code base, and DevOps methodology driven as an Infrastructure as Code (IaC) deployment
-     system, using AWS CDK. Additionally, created a simplified JavaScript to Python interface
-     via API gateway for Lambda or Apache-executed processes.
+     code base, dev-ops methodology driven as an Infrastructure as Code (IaC) deployment
+     system, using AWS cloud development kit (CDK). Additionally, created a simplified
+     JavaScript to Python interface using AWS API gateway for Lambda or Apache-executed
+     processes.
+  
+   * SaaS product delivery: Established a 'Data Marketplace' using Shopify for the curated
+     retail sale of Machine Learning ready datasets. Developed all Python-based APIs.
+     Implemented a system where data is initially stored as CSV and dynamically converted to
+     various requested formats such as CSV, JSON, Parquet and API payloads, and stored in S3.
+     This system made extensive use of Pandas, GeoPandas, Numpy and Scikit-learn for
+     statistical analysis (Normal distribution calculations).
   
    * Data Engineering: Designed and implemented Python-based data extraction, transformation,
      and loading (ETL) pipelines across Lambda, ECS, and EC2 environments to facilitate
@@ -205,6 +209,16 @@ EXPERIENCE
   RUBIX (Consulting @ National Australia Bank)
   - APR 2019 to NOV 2021 
   
+   * Mentorship and Leadership: Development and delivery of comprehensive training sessions for
+     new team members. Topics covered included the significance of, and methodologies for,
+     conducting Peer Reviews, code readability, code maintainability, Test Driven Development,
+     Domain Driven Development and bug minimisation though the use of tools like SonarCube.
+  
+   * Data engineering: Big-data pipelines: creation, management, and maintenance of data
+     pipelines (ETL). Development of python functions, class and data structures to facilitate
+     the acquisition, transformation, quality assurance and delivery of data from multiple
+     legacy systems, (mainframes, AS400 etc) into S3 data-stores, using AWS Athena & Glue.
+  
    * AWS Cloud Engineering: Led the design and development of Python / Jenkins / Airflow data
      extraction and transformation pipelines tailored for execution in Lambda + Elastic
      Container Store (ECS) or EC2 environments. Proficiently managed data transport and
@@ -217,16 +231,6 @@ EXPERIENCE
    * Code Quality Control: Led the conversion of requirements and implemented code to
      effectively monitor and rectify real-time data quality issues. Established code quality
      metrics, ways-of-working and dashboard visualisations in Splunk.
-  
-   * Mentorship and Leadership: Development and delivery of comprehensive training sessions for
-     new team members. Topics covered included the significance of, and methodologies for,
-     conducting Peer Reviews, code readability, code maintainability, Test Driven Development,
-     Domain Driven Development and bug minimisation though the use of tools like SonarCube.
-  
-   * Data engineering: Big-data pipelines: creation, management, and maintenance of data
-     pipelines (ETL). Development of python functions, class and data structures to facilitate
-     the acquisition, transformation, quality assurance and delivery of data from multiple
-     legacy systems, (mainframes, AS400 etc) into S3 data-stores, using AWS Athena & Glue.
   
   
   
@@ -241,7 +245,7 @@ EXPERIENCE
      ETL processes handling up to 200GB of data.
   
    * Designed and delivered training courses on SumoLogic usage, focusing on data acquisition
-     and Observability techniques, titled 'How to find your data (problems)'
+     and Observability techniques, titled ‘How to find your data (problems)’
   
    * Developed several applications utilising Python, within Docker containers, running on both
      Kubernetes and AWS Fargate, to bolster fraud detection capabilities.
@@ -270,8 +274,9 @@ EXPERIENCE
      platform. These enhancements bolstered customer retention, ensured system stability, and
      facilitated the roll-out of new betting markets.
   
-   * Leveraged Python & QGIS for geo-spatial data analysis to support retail teams in vendor
-     payments, employing an innovative approach tailored for non-traditional venues.
+   * Leveraged Python, open-source QuantumGIS (QGIS) for geo-spatial data analysis to support
+     retail teams in vendor payments, employing an innovative approach tailored for non-
+     traditional venues.
   
   
   
@@ -281,17 +286,18 @@ EXPERIENCE
   SMS Global (Melbourne, Australia)
   - AUG 2014 to AUG 2015 
   
-   * Created PHP integrations linking the SMS delivery platform with various 3rd party REST
-     APIs, such as Xero accounting and the Zapier.com platform.
+   * Created PHP integrations linking the short-message-service (SMS) delivery platform with
+     various 3rd party REST APIs, such as Xero accounting and the Zapier.com platform.
   
    * Designed and implemented multiple Zapier 'zaps' to enable customers to seamlessly upload
      their Google contacts into our platform, send bulk messages using a Google Sheet, and
      receive reports from our system directly into Google Sheets.
   
-   * Restructured a client's Linux, Apache, MySQL, PHP (LAMP) application into a multi-tier MVC
-     pattern web application. Hosted on AWS, the redeveloped application incorporated SSL,
-     virtual load balancers, multiple EC2 instances, a MySQL backend, and dynamically attached
-     EBS volumes for enhanced scalability and performance.
+   * Restructured a client's Linux, Apache, MySQL, PHP (LAMP) application into a multi-tier
+     model-view-controller (MVC) pattern web application. Hosted on AWS, the redeveloped
+     application incorporated secure-socket-layer (SSL), virtual load balancers, multiple EC2
+     instances, a MySQL back-end, and dynamically attached elastic-block-store (EBS) volumes
+     for enhanced scalability and performance.
   
   
   
@@ -301,15 +307,15 @@ EXPERIENCE
   Victorian Greens Party (Melbourne, Australia)
   - JUN 2013 to JUL 2014 
   
+   * Oversaw the transition to the cloud, leading the migration of the Victorian office from an
+     on-site email and shared files service to a hosted VPS. Managed the entire process to
+     minimise costs and ensure backup services were in place.
+  
    * Engineered an ETL adaptor using PHP to seamlessly integrate the Nation-builder SaaS
      platform with the internal Drupal system of the Greens.
   
    * Administered Unix servers, overseeing tasks such as local and remote email server
      management, as well as implementing SPAM and anti-virus detection measures.
-  
-   * Oversaw the transition to the cloud, leading the migration of the Victorian office from an
-     on-site email and shared files service to a hosted VPS. Managed the entire process to
-     minimize costs and ensure backup services were in place.
   
   
   
@@ -346,7 +352,7 @@ EXPERIENCE
    * Researched, obtained, analysed, and processed geo-spatial datasets for projects focused on
      Human-Footprint and Human Influence indices.
   
-   * Created Python-based plugins for QGIS to implement the supervisor's research algorithms.
+   * Created Python-based plugins for QGIS to implement the supervisor's research algorithms
   
   
   
@@ -376,7 +382,7 @@ EXPERIENCE
   - APR 2010 to MAY 2011 
   
    * Led a Queensland Cyber Infrastructure Foundation (QCIF) project as principal investigator
-     to construct a 'Smart Water Sensor Network.', involving the development of a proof-of-
+     to construct a 'Smart Water Sensor Network', involving the development of a proof-of-
      concept system, primarily using off-the-shelf components complemented by custom-built
      code. The system was designed for deployment in remote locations to monitor a homogeneous
      array of sensors and transmit data via satellite link.
@@ -399,9 +405,10 @@ EXPERIENCE
      development of extensive code-bases utilising Linux, Python, and MySQL.
   
    * Conducted analysis on geographic and satellite remote sensing datasets to generate
-     geographic datasets, cartographic imagery, and figures for publication in journal articles
+     geographic datasets, cartographic imagery, and figures for publication in journal
+     articles.
   
-   * Delivered a public lecture on XML titled 'eXciting Markup Language'.
+   * Delivered a public lecture on XML titled ‘eXciting Markup Language’.
   
    * Re-engineered C++ Artificial Neural Network code-base and data reader into Python.
   
@@ -413,12 +420,12 @@ EXPERIENCE
   CSIRO (Cairns, Australia)
   - SEP 2006 to APR 2009 
   
-   * Created 'The Landscapes Toolkit' a desktop application for MS-Windows using C# and web
+   * Created ‘The Landscapes Toolkit”, a desktop application for MS-Windows using C# and web
      technologies such as HTML and CSS. This application, developed in C# .NET, supports the
      integration of models through a Lazy-load software pattern implementation.
   
-   * Designed and implemented geo-spatial and environmental modelling tools for 'The Landscapes
-     Toolkit' a Scientific Model Integration environment. These tools included Python plugins
+   * Designed and implemented geo-spatial and environmental modelling tools for ‘The Landscapes
+     Toolkit’ a Scientific Model Integration environment. These tools included Python plugins
      to enhance functionality.
   
   
@@ -436,7 +443,7 @@ EXPERIENCE
      and virus filtering, on Windows 2003 and Citrix servers.
   
    * Desktop support for 300+ users across 14 sites, including fault analysis, recording, and
-     repair
+     repair.
   
   
   
