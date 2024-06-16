@@ -4,7 +4,16 @@ Resume created using different technologies
 The following is a demonstration of my web technology skills. Below you will find links
 to my resume being programmatically built, using a github hosted JSON file, and various technologies. 
 
+note: the code and generated outputs are intentionally not complicated, to highlight to process.
+
+
 JSON source - https://github.com/afakes/resume/blob/master/resume.json
+
+GitHUB raw file hosting
+-------------------------------
+JSON source - https://github.com/afakes/resume/blob/master/resume.json
+Plain text  - https://raw.githubusercontent.com/afakes/portfolio/main/text/resume.txt
+
 
 
 S3 Hosted
@@ -21,10 +30,7 @@ Vanilla JavaScript - https://afakes.github.io/portfolio/index.html
 Plain Text         - https://afakes.github.io/portfolio/readme.txt
 
 
-GitHUB raw file hosting
--------------------------------
-Formatted text using local Python - https://raw.githubusercontent.com/afakes/portfolio/main/text/resume.txt
-JSON source - https://github.com/afakes/resume/blob/master/resume.json
+
 
 
 Text version
