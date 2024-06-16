@@ -32,9 +32,17 @@ git add .
 git commit -m "deploy"
 git push
 
-
-
 # change back to the original directory
+cd $DIR
+
+# we would like to copy vanilla to s3 root folder 
+
+
+
+# make this the last one as it also tell cloudfront to update
+# change to react folder run deploy_s3 and return
+cd react
+./deploy_s3.sh
 cd $DIR
 
 
