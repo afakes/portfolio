@@ -19,6 +19,8 @@ cd text
 
 # copy the text version to portfolio root as readme.txt
 cp resume.txt ../readme.txt
+cat resume.txt ../versions.txt > ../readme.txt
+
 
 # change back to the original directory
 cd $DIR

@@ -497,3 +497,14 @@ CO-AUTHORED JOURNAL ARTICLES
   
   
   
+Resume created using different technologies 
+====================================================================================================
+
+Built using Vanilla JavaScript - https://adamfakes.com
+Built using Python             - https://raw.githubusercontent.com/afakes/portfolio/main/text/resume.txt
+
+
+
+Below text version, also available here, https://raw.githubusercontent.com/afakes/portfolio/main/text/resume.txt
+====================================================================================================
+
