@@ -13,14 +13,14 @@ git push
 cd $DIR
 
 
+
 # recreate the text version
 cd text
 ./create.py
 
 # copy the text version to portfolio root as readme.txt
 cp resume.txt ../readme.txt
-cat resume.txt ../versions.txt > ../readme.txt
-
+cat ../versions.txt resume.txt  > ../readme.txt
 
 # change back to the original directory
 cd $DIR
