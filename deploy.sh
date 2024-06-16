@@ -1,14 +1,21 @@
 #!/bin/bash
 
+# get current date time as now 
+now=$(date +"%Y-%M-%s %T")
+
+commit_message="deployed at ${now}"
+
 # get the path to the directory where the script is located
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
 
 # copy data/resume.json to ../public_resume, then commit and push
 cp data/resume.json ../public_resume/
 cd ../public_resume
+
+echo "${commit_message}" >> deploy.log
+
 git add .
-git commit -m "deploy"
+git commit -m "${commit_message}"
 git push
 cd $DIR
 
@@ -20,6 +27,7 @@ cd text
 
 # copy the text version to portfolio root as readme.txt
 cp resume.txt ../readme.txt
+cp resume.txt ../docs/readme.txt
 cat ../versions.txt resume.txt  > ../readme.txt
 
 # change back to the original directory
@@ -29,9 +37,11 @@ cd $DIR
 aws s3 cp text/resume.txt s3://adamfakes.com/resume.txt --acl public-read 
 
 
+echo "${commit_message}" >> deploy.log
+
 # add, commit and push changes
 git add .
-git commit -m "deploy"
+git commit -m "${commit_message}"
 git push
 
 
@@ -44,7 +54,7 @@ cd ../public_portfolio
 
 # add, commit and push changes
 git add .
-git commit -m "deploy"
+git commit -m "${commit_message}"
 git push
 
 # change back to the original directory
