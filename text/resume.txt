@@ -1,6 +1,6 @@
   ADAM FAKES
   ----------------------------------------------------------------------------------------------------
-  DATA SCIENCE | DATA ENGINEERING | SOFTWARE ENGINEERING | GEOSPATIAL ANALYSIS
+  DATA ENGINEERING | DATA SCIENCE | SOFTWARE ENGINEERING | GEOSPATIAL ANALYSIS
   
 CONTACT
 ====================================================================================================
@@ -9,7 +9,7 @@ CONTACT
    - phone        0401-302243
    - physical     Melbourne, Victoria, Australia
    - LinkedIn     https://www.linkedin.com/in/adamfakes
-   - github       https://github.com/afakes/
+   - github       https://github.com/afakes/portfolio
    - portfolio    https://adamfakes.my.canva.site/
    - website      https://adamfakes.com
    - google meet  https://meet.google.com/omv-aizq-vrj
