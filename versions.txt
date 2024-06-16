@@ -18,7 +18,7 @@ Plain Text         - https://adamfakes.com/resume.txt
 GitHUB Pages hosting
 -------------------------------
 Vanilla JavaScript - https://afakes.github.io/portfolio/index.html
-Plain Text         - https://afakes.github.io/portfolio/resume.txt
+Plain Text         - https://afakes.github.io/portfolio/readme.txt
 
 
 GitHUB raw file hosting
