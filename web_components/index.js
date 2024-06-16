@@ -253,7 +253,7 @@ window.customElements.define('resume-section', ResumeSection);
 class PageManager {
  
     constructor() {
-        this.dataURL = "../data/resume.json";
+        this.dataURL = "https://raw.githubusercontent.com/afakes/resume/master/resume.json";
         this.data = null;
     }
     
