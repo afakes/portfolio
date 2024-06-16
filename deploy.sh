@@ -25,6 +25,8 @@ cat ../versions.txt resume.txt  > ../readme.txt
 # change back to the original directory
 cd $DIR
 
+# copy text version to S3
+aws s3 cp text/resume.txt s3://adamfakes.com/resume.txt --acl public-read 
 
 
 # add, commit and push changes

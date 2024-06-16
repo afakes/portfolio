@@ -16,6 +16,8 @@ Web Components     - https://adamfakes.com/web_components/index.html
 
 GitHUB Pages hosting
 -------------------------------
+Vanilla JavaScript - https://afakes.github.io/portfolio/index.html
+
 
 
 GitHUB raw file hosting
