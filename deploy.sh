@@ -53,6 +53,11 @@ cd vanilla
 ./deploy_s3.sh
 cd $DIR
 
+# we would like to copy web_components to s3  folder 
+cd web_components
+./deploy_s3.sh
+cd $DIR
+
 
 # make this the last one as it also tell cloudfront to update
 # change to react folder run deploy_s3 and return

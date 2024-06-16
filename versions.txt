@@ -1,12 +1,21 @@
 
 Resume created using different technologies 
 ====================================================================================================
+The following is a demonstration of my web technology skills. Below you will find links
+to my resume being programmatically built, using a github hosted JSON file, and various technologies. 
 
-Built using Vanilla JavaScript - https://adamfakes.com
-Built using Python             - https://raw.githubusercontent.com/afakes/portfolio/main/text/resume.txt
+JSON source - https://github.com/afakes/resume/blob/master/resume.json
 
 
+S3 Hosted
+-------------------------------
+Vanilla JavaScript - https://adamfakes.com
+React, JavaScript  - https://adamfakes.com/react
+Web Components     - https://adamfakes.com/web_
 
-Below text version, also available here, https://raw.githubusercontent.com/afakes/portfolio/main/text/resume.txt
+Formatted text using local Python - https://raw.githubusercontent.com/afakes/portfolio/main/text/resume.txt
+
+
+Text version
 ====================================================================================================
 
