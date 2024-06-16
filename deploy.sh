@@ -21,6 +21,7 @@ cd $DIR
 
 
 
+
 # recreate the text version
 cd text
 ./create.py
@@ -35,6 +36,20 @@ cd $DIR
 
 # copy text version to S3
 aws s3 cp text/resume.txt s3://adamfakes.com/resume.txt --acl public-read 
+
+
+# docx version 
+cp /home/afakes/Documents/resume/versions/AdamFakes_Resume_2024-06-04.docx docx/resume.docx
+
+
+# create HTML version
+cd html
+./create.py
+
+# pure HTML version will be served from docs folder
+cp index.html ../docs/index.html
+cp index.css ../docs/index.css
+cd $DIR
 
 
 echo "${commit_message}" >> deploy.log
@@ -76,6 +91,7 @@ cd $DIR
 cd react
 ./deploy_s3.sh
 cd $DIR
+
 
 
 echo "Invalidating cloudfront cache"
