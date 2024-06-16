@@ -11,7 +11,7 @@ S3 Hosted
 -------------------------------
 Vanilla JavaScript - https://adamfakes.com
 React, JavaScript  - https://adamfakes.com/react
-Web Components     - https://adamfakes.com/web_
+Web Components     - https://adamfakes.com/web_components
 
 Formatted text using local Python - https://raw.githubusercontent.com/afakes/portfolio/main/text/resume.txt
 
