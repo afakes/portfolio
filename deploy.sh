@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # get current date time as now 
-now=$(date +"%Y-%M-%s %T")
+now=$(date +"%Y-%M-%d %T")
 
 commit_message="deployed at ${now}"
 
