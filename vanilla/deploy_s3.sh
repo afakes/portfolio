@@ -7,7 +7,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # get list of files  in folder 
 
 echo "Copying  to s3 root"
-aws s3 sync  . s3://adamfakes.com/ --acl public-read --include "index.*"
+aws s3 sync  . s3://adamfakes.com/ --acl public-read 
 
 # if environmental variable is set, then invalidate cloudfront cache
 if [ -z "$INVALIDATE" ]
