@@ -46,7 +46,8 @@ class PageManager {
         if (main === null) { return;}
 
         let content = `<div>`;
-        for (let section of this.data) {
+        for (let [section_number, section] of this.data.entries()) {
+            section.section_number = section_number;
             content += this.renderSection(section);
         }
         content += `</div>`;
@@ -61,13 +62,42 @@ class PageManager {
 
         let content = `<section id="${section.type}">`;
 
+        if (section.image) {
+            content += `<div class="left_right">`;
+            content += `<img src="${section.image}" alt="image" class="image">`;
+            content += `<div class="text">`;
+
+            // if summary is present, and it contains " | " then convert to key_values
+            if (section.summary && section.summary.includes(" | ")) {
+
+                let summary_key_values = [];
+                let raw_key_values = section.summary.split(" | ");
+                for (let raw_key_value of raw_key_values) {
+                    summary_key_values.push(
+                        {"key":"", "value": raw_key_value}
+                    )
+                }
+                
+                section.key_value = summary_key_values;
+
+                section.summary = null;
+            }
+        }
+
         if (section.title)      { content += `<h1>${section.title}</h1>`; }
         if (section.heading)    { content += `<h2>${section.heading}</h2>`;}
         if (section.subheading) { content += `<h3>${section.subheading}</h3>`; }
-        if (section.summary)    { content += `<h4>${section.summary}</h4>`; }
-        
+        if (section.summary)    { content += `<h4>${section.summary}</h4>`; }        
+        if (section.key_value)  { content += this.renderKeyValues(section.key_value); }
+
+
         for (let article of (section.articles || [])) {
             content += this.renderArticle(article);
+        }
+
+        if (section.image) {
+            content += `</div>`; // close div.text
+            content += `</div>`; // close left_right
         }
 
         content += `</section>`;

@@ -46,11 +46,11 @@ h1 {
   font-size: 200%;
   font-weight: 700;
   font-family: "Roboto Condensed", sans-serif;
-  color: #333;
+  color: #63654A;
   margin: 0;
   margin-top: 1em;
   text-transform: uppercase;
-  border-bottom: 1px solid #333333;
+  border-bottom: 2px solid #63654A;
 
 }
 
@@ -417,4 +417,61 @@ h4 {
   line-height: 1.1em;
   font-family: "Roboto Condensed", sans-serif;
   width: 40em;
+}
+
+
+.left_right {
+  /* a grid of 2 by 1 */
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+  margin: 0;
+  margin-top: 2em;
+  /* grid justify to left */
+  justify-content: left;
+}
+
+.left_right h4 {
+  margin: 0;
+  color: red;
+  display: inline-block;
+  width: 20em;
+  
+}
+
+.left_right > img {
+  border-radius: 20%;
+}
+
+.left_right .text ul.key_value li {
+  margin: 0;
+  /* remove bullet */
+  list-style-type: none;
+  line-height: 1.3em;
+}
+
+.left_right .text ul.key_value li span.key {
+  margin: 0;
+}
+
+.left_right .text ul.key_value li span.value {
+  text-transform: uppercase;
+  font-weight: bold;
+  /* Roboto Condensed */
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 0.05em;
+  color: #050513;
+}
+
+.left_right .text ul.key_value li span.value::before {
+  /* content is a filled square */
+  display: inline-block;  
+  position: relative;
+  top: 0.05em;
+  content: "\25A0";
+  font-size: 1.5em;
+  color: #A72539;
+
+  margin-right: 0.2em;
 }
