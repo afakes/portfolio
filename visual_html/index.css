@@ -442,6 +442,8 @@ h4 {
 
 .left_right > img {
   border-radius: 20%;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .left_right .text ul.key_value li {
