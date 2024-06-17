@@ -38,6 +38,13 @@ cd $DIR
 aws s3 cp text/resume.txt s3://adamfakes.com/resume.txt --acl public-read 
 
 
+# deploy images
+cd images
+./deploy.sh
+cd $DIR
+
+
+
 # docx version 
 cp /home/afakes/Documents/resume/versions/AdamFakes_Resume_2024-06-04.docx docx/resume.docx
 
