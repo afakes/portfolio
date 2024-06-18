@@ -1,0 +1,450 @@
+
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* body  */
+body {
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  font-size: 16pt;
+}
+
+
+
+/* container main */
+#container {
+  max-width: 60em;
+  min-width: 40em;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* h1 */
+h1 {
+  font-size: 200%;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #333;
+  margin: 0;
+  margin-top: 1em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #333333;
+
+}
+
+/* h2 */
+h2 {
+  font-size: 150%;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #333;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+/* h3 */
+h3 {
+  font-size: 100%;
+  font-weight: 700;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* h4 */
+h4 {
+  font-size: 80%;
+  font-weight: 700;
+  color: #333;
+  margin: 20px 0;
+  /*  uppercase */
+  text-transform: uppercase;
+}
+
+
+#page {
+  margin: 0;
+}
+
+#page h2 {
+  font-size: 300%;
+  /* margin: 0; */
+  margin-bottom: 0.1em;
+  padding: 0;
+  letter-spacing: 0.05em;
+}
+
+#page h4 {
+  font-size: 110%;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.05em;
+}
+
+
+#contact {
+  margin: 0; 
+}
+
+#contact article {
+  margin: 0; 
+}
+
+#contact article ul {
+  margin: 0; 
+}
+
+#contact article ul li {
+  margin: 0; 
+  margin-left: 2em; 
+  list-style-type: none;
+  padding-top: 0.8em; 
+  
+}
+
+/* first span in #contact article ul li */
+#contact article ul li span:first-child {
+  font-weight: 700;
+  color: #333;
+  margin-right: 0.5em;
+  padding-bottom: 0.2em;
+  display: inline-block;
+  width:10em;
+  border-bottom: 1px solid #888888;
+  text-transform: uppercase;
+}
+
+/* second span in #contact article ul li */
+#contact article ul li span:last-child {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #888888;
+  display: inline-block;
+  width:22em;
+  padding-bottom: 0.2em;
+}
+
+#contact article ul li span:last-child a {
+  font-weight: normal;
+}
+
+
+#summary {
+  margin: 0; 
+}
+
+#summary article {
+  margin: 0; 
+}
+
+#summary article h4 {
+  font-size: 110%;
+  margin: 0;
+  margin-top: 0.4em;
+  margin-bottom: 1em;
+  padding: 0;
+  letter-spacing: 0.1em;
+}
+
+#summary article ul {
+  margin: 0; 
+  margin-left: 2em; 
+}
+
+#summary article ul li {
+  margin: 0; 
+  /* no bullet */
+  list-style-type: none;
+  line-height: 1.4em;
+  padding-bottom: 0.8em;
+  max-width: 40em;
+  display: inline-block;
+  
+}
+
+
+#education {
+  margin: 0; 
+  margin-top: 2em;
+}
+
+#education h1 {
+  margin: 0; 
+  margin-bottom: 0.5em; 
+}
+
+#education article {
+  margin-bottom: 2em;
+  margin-left: 2em;
+}
+
+#education article h2 {
+  margin: 0;
+  margin-bottom: 0.3em;
+}
+
+#education article h3 {
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+  
+}
+
+#education article h4 {
+  margin: 0; 
+  margin-bottom: 0.5em;
+  font-weight: normal;
+  
+}
+
+
+#skills {
+  margin: 0; 
+  margin-top: 2em;
+}
+
+#skills h1 {
+  margin: 0; 
+  margin-bottom: 0.5em; 
+}
+
+#skills article {
+  margin-bottom: 2em;
+  margin-left: 2em;
+}
+
+#skills article h2 {
+  margin: 0;
+  margin-bottom: 0.3em;
+}
+
+#skills article h3 {
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+  
+}
+
+#skills article h4 {
+  margin: 0; 
+  margin-bottom: 0.5em;
+  font-weight: normal;
+  
+}
+
+#skills article ul {
+  margin: 0; 
+}
+
+#skills article ul li {
+  margin: 0; 
+  list-style-type: none;
+  padding-top: 0.6em; 
+  
+}
+
+/* first span in #contact article ul li */
+#skills article ul li span:first-child {
+  font-weight: normal;
+  color: #333;
+  margin-right: 0.5em;
+  padding-bottom: 0.2em;
+  display: inline-block;
+  width:4em;
+  border-bottom: 1px solid #888888;
+  text-transform: uppercase;
+  /* right align */
+  text-align: right;
+}
+
+#skills article ul li span:first-child::after {
+  content: " years";
+  text-transform: lowercase;
+  font-weight: normal;
+}
+
+/* second span in #contact article ul li */
+#skills article ul li span:last-child {
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.05em;
+  
+  display: inline-block;
+  width:50em;
+  padding-bottom: 0.2em;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+
+
+
+#experience {
+  margin: 0; 
+  margin-top: 2em;
+}
+
+#experience h1 {
+  margin: 0; 
+  margin-bottom: 0.5em; 
+}
+
+#experience article {
+  margin-bottom: 2em;
+  margin-left: 2em;
+}
+
+#experience article h2 {
+  margin: 0;
+  margin-bottom: 0.3em;
+  
+}
+
+#experience article h2::before {
+  /* square box */
+  content: "\25A0";
+  font-size: 1.4em;
+  margin-right: 0.2em;
+  vertical-align: text-bottom;
+}
+
+
+#experience article h3 {
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  
+}
+
+#experience article h4 {
+  margin: 0; 
+  margin-bottom: 0.5em;
+  font-weight: normal;
+  
+}
+
+#experience article ul {
+  margin: 0; 
+}
+
+#experience article ul li {
+  margin: 0; 
+  list-style-type: square;
+  padding-top: 0.6em; 
+  margin-left: 2em;
+  line-height: 1.1em;
+  font-family: "Roboto Condensed", sans-serif;
+  width: 40em;
+}
+
+
+#academic {
+  margin: 0; 
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#academic h1 {
+  margin: 0; 
+  margin-bottom: 0.5em; 
+}
+
+#academic article {
+  margin-bottom: 0.6em;
+  margin-left: 1em;
+}
+
+#academic article h2 {
+  margin: 0;
+  margin-bottom: 0.3em;
+  
+}
+
+#academic article h2::before {
+  /* square box */
+  content: "\25A0";
+  font-size: 1.4em;
+  margin-right: 0.2em;
+  vertical-align: text-bottom;
+}
+
+
+#academic article h3 {
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  
+}
+
+#academic article h4 {
+  margin: 0; 
+  margin-bottom: 0.5em;
+  font-weight: normal;
+  
+}
+
+#academic article ul {
+  margin: 0; 
+}
+
+#academic article ul li {
+  margin: 0; 
+  list-style-type: square;
+  padding-top: 0.6em; 
+  margin-left: 0em;
+  line-height: 1.1em;
+  font-family: "Roboto Condensed", sans-serif;
+  width: 40em;
+}
+
+
+.rewrite {
+  font-size: 80%;
+  font-weight: 700;
+  color: #777;
+  margin: 0;
+  margin-left: 0.5em;
+  
+}
+
+.rewriting {
+  color: #AAA;  
+
+  /* pulsate color #AAA to #EEE  */
+  animation: pulsate 3s infinite;
+
+}
+
+@keyframes pulsate {
+  0% {
+    color: #AAA;
+  }
+  50% {
+    color: #EEE;
+  }
+  100% {
+    color: #AAA;
+  }
+}

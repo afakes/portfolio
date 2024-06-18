@@ -1,0 +1,5 @@
+requests
+datetime
+argparse
+boto3
+botocore

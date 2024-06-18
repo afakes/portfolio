@@ -60,12 +60,11 @@ class PageManager {
         console.log(`section ${section.type}`);
         console.log(section);
 
-        let content = `<section id="${section.type}">`;
-
+    
+        let image_content = "";
         if (section.image) {
-            content += `<div class="left_right">`;
-            content += `<img src="${section.image}" alt="image" class="image">`;
-            content += `<div class="text">`;
+            
+            image_content += `<img src="${section.image}" alt="image" class="image">`;
 
             // if summary is present, and it contains " | " then convert to key_values
             if (section.summary && section.summary.includes(" | ")) {
@@ -79,25 +78,33 @@ class PageManager {
                 }
                 
                 section.key_value = summary_key_values;
-
                 section.summary = null;
             }
+
+
         }
 
-        if (section.title)      { content += `<h1>${section.title}</h1>`; }
-        if (section.heading)    { content += `<h2>${section.heading}</h2>`;}
-        if (section.subheading) { content += `<h3>${section.subheading}</h3>`; }
-        if (section.summary)    { content += `<h4>${section.summary}</h4>`; }        
-        if (section.key_value)  { content += this.renderKeyValues(section.key_value); }
 
-
+        let text_content = "";
+        if (section.title)      { text_content += `<h1>${section.title}</h1>`; }
+        if (section.heading)    { text_content += `<h2>${section.heading}</h2>`;}
+        if (section.subheading) { text_content += `<h3>${section.subheading}</h3>`; }
+        if (section.summary)    { text_content += `<h4>${section.summary}</h4>`; }        
+        if (section.key_value)  { text_content += this.renderKeyValues(section.key_value); }
         for (let article of (section.articles || [])) {
-            content += this.renderArticle(article);
+            text_content += this.renderArticle(article);
         }
 
-        if (section.image) {
-            content += `</div>`; // close div.text
-            content += `</div>`; // close left_right
+        
+        let content = `<section id="${section.type}">`;
+        
+        if (image_content == "") {
+            content += text_content;    
+        } else {
+            content += `<div class="left_right">`;
+            content += image_content;
+            content += `<div class="text">${text_content}</div>`;
+            content += `</div>`;
         }
 
         content += `</section>`;
