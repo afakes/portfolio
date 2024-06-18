@@ -87,6 +87,11 @@ cd vanilla
 ./deploy_s3.sh
 cd $DIR
 
+cd vanilla_ai
+./deploy_s3.sh
+cd $DIR
+
+
 # we would like to copy web_components to s3  folder 
 cd web_components
 ./deploy_s3.sh
