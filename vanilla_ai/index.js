@@ -276,6 +276,13 @@ class PageManager {
         
         let result = raw_result.result;
 
+        // if result starts with quote remove it
+        if (result.startsWith('"')) { result = result.substring(1); }
+
+        // if result ends with quote remove it
+        if (result.endsWith('"')) { result = result.substring(0, result.length - 1); }
+
+        
         // loop through result and split by new line
         let new_points = [];
         for (let line of result.split("\n")) {
